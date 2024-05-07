@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+
+@font-face {
+  font-family: "Lastica";
+  src: url("../Lastica.ttf") format("truetype");
+}
+.Logo {
+  height: 13vh !important;
+  margin-top: -8vh;
+}
+.text {
+  margin-top: 3vh;
+}
+
+* {
+  margin-top: -2vh;
+  font-family: "Lastica", sans-serif;
+  font-weight: 1000;
+  font-size: 2vh;
+  letter-spacing: 0.5vh;
+}
+* nav {
+  width: 100vw !important;
+}
+
+.SignupBtn {
+  margin-left: 2vw;
+  background-color: black;
+  color: white;
+  padding: 1.5vh;
+  padding-left: 4.5vh;
+  padding-right: 4.5vh;
+  border-radius: 100vh;
+  margin-right: 1vw;
+  font-size: 1.5vh !important;
+}
+@media screen and (max-width: 1025px) {
+  .popup {
+    position: absolute;
+    z-index: 999;
+    margin: auto !important;
+    background-color: white;
+    flex-direction: column !important;
+    right: 0;
+
+    top: 27vw;
+  }
+
+  .popup li {
+    margin-left: 0 !important;
+    margin-top: 2vh !important;
+  }
+  .SignupBtn {
+    display: none;
+  }
+}
