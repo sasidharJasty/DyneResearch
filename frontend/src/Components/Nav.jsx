@@ -20,14 +20,16 @@ function Navbar() {
   };
 
   return (
-    <nav className="left-0 w-full z-50 fixed top-0 pt-16 bg-transparent">
+    <nav className="left-0 w-full z-50 fixed top-0  pt-16 bg-transparent">
       <div className="w-screen flex flex-wrap items-center justify-between mx-auto py-4 px-20 relative">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className=" w-[2vw]   mt-0" alt="Dyne Logo" />
-          <h1 className="text-2xl mt-1 text-white">DYNERESEARCH</h1>
+          <h1 className="text-2xl mt-1 text-white !font-normal">
+            DYNERESEARCH
+          </h1>
         </a>
         <div className={` ${isSmallScreen ? "w-1/12 " : "hidden"}`}></div>
-        <div className={"flex absolute bottom-0 right-20"}>
+        <div className={"flex absolute bottom-0 !font-normal right-20"}>
           <button
             onClick={toggleMenu}
             type="button"
@@ -63,11 +65,11 @@ function Navbar() {
               }`}
               id="navbar-default"
             >
-              <ul className="font-medium popup flex flex-col p-4 lg:p-0 mt-4 border lg:pt-10 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+              <ul className=" popup !font-normal flex flex-col p-4 lg:p-0 mt-4 border lg:pt-10 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
                 <li>
                   <a
                     href="/"
-                    className="block py-2 px-3 text-white md:hover:text-blue-700 rounded bg-transparent md:text-white-700 md:p-0 dark:text-white md:dark:text-white-500"
+                    className="block py-2 px-3 !font-normal text-white md:hover:text-blue-700 rounded bg-transparent md:text-white-700 md:p-0 dark:text-white md:dark:text-white-500"
                     aria-current="page"
                   >
                     HOME
@@ -76,7 +78,7 @@ function Navbar() {
                 <li>
                   <a
                     href="/about/"
-                    className="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 px-3 text-gray-900 rounded !font-normal  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     MISSION
                   </a>
@@ -84,7 +86,7 @@ function Navbar() {
                 <li>
                   <a
                     href="/mission"
-                    className="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 px-3 text-gray-900 rounded !font-normal md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     CONTACT
                   </a>
@@ -92,7 +94,7 @@ function Navbar() {
                 <li>
                   <a
                     href="/progress"
-                    className="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 px-3 text-gray-900 rounded !font-normal md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     ABOUT
                   </a>
@@ -102,7 +104,7 @@ function Navbar() {
             <div className={` ${isSmallScreen ? "w-1/12 " : "hidden"}`}></div>
             <a
               href="/signup/"
-              className={` SignupBtn bg-transparent border broder-black ${
+              className={` SignupBtn !font-normal bg-transparent border broder-black ${
                 isSmallScreen ? "hidden md:inline-block" : "md:inline-block"
               }`}
             >
