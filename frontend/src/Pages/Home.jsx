@@ -202,6 +202,36 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="h-screen flex items-center">
+          <div className="w-4/5 mx-auto h-3/4 flex items-center text-center text-white ">
+            <div className="w-1/2  h-full mt-0 text-left">
+              <h3 className="text-blue-300 tracking-[0.15vw] mb-[1vh] mt-[10vh] ">
+                INVEST
+              </h3>
+              <h1 className="text-[2.6vw] Mission-Gradient w-[80%] !font-normal mb-[4vh] leading-[6vh] tracking-[0.06vw]">
+                Embark on our journey of creating the games for the future and
+                of the future
+              </h1>
+              <h2 className="text-[0.9vw] mt-[2vh] font-normal w-[85%] text-left Content-Font tracking-[0.1vw]  mb-[8vh]">
+                With our current technology we are looking for raising money for
+                investors and growing up our industry. Lorem ipsum praesent ac
+                massa at ligula reet est iaculis. Vivamus est mist aliquet elit
+                ac nisl.
+              </h2>
+              <div className="flex">
+                <a
+                  href="/about"
+                  className="font-thin Home-Discover-Btn text-center py-[1.5vh] mr-4 px-[2vw] rounded-3xl"
+                >
+                  Invest
+                </a>
+                <a className="Content-Font  font-normal border border-gray-300 rounded-[100vw] p-[1.5vh] px-[3vh] ">
+                  About Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
